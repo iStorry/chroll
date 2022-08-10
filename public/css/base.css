@@ -1,0 +1,22 @@
+input[type="number"] {
+    width: 25px;
+    border-radius: 2px;
+    margin-left: 10px;
+    height: 24px;
+    background: #424040;
+    text-align: center;
+    border: none;
+    color: white;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
