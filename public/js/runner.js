@@ -27,7 +27,6 @@ $(function () {
     }
 
     $.fn.calc = function() {
-        console.log(query);
         let r = recover(query.stamina);
         let y = query.stamina;
         let total = 0, recovered = 0;
@@ -66,6 +65,8 @@ $(function () {
     
 
     $(temtemSelector).on("change", async function(e) {
+        query = { moves: []};
+        $(`.result`).html(``);
         const { data: { temtem: { techniques, base_stats: { stamina } } } } = await $(this).fetchTemtem();
         query.stamina = stamina;
         const { egg, level_up, training_course } = techniques;
