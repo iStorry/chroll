@@ -18,12 +18,12 @@ $(function () {
 
     // Load Tems
     $.fn.temtems = async function() {
-        return await $.get(`https://tem.team/api/v1/temtems?include=can_evolve&origin=tem.team`);
+        return await $.get(`https://tem.team/api/v1/temtems?include=can_evolve&origin=churoll`);
     }
 
     $.fn.fetchTemtem = async function() {
         query.temtem = $(this).val();
-        return await $.get(`https://tem.team/api/v1/temtems/${$(this).val()}?origin=tem.team`); 
+        return await $.get(`https://tem.team/api/v1/temtems/${$(this).val()}?origin=churoll`); 
     }
 
     $.fn.calc = function() {
