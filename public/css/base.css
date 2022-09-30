@@ -12,11 +12,33 @@ input[type="number"] {
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+}
+
+.item {
+    background: #202020;
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.temtems {
+    transition: transform 1s ease-in-out;
 }
